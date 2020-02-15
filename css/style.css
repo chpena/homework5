@@ -56,25 +56,26 @@ Keyframes for animation*/
 @-webkit-keyframes logo_wiggle{
   from {width: 25px;}
   to {width: 420px;}
-  animation-duration: 3s;
+
 }
 
 @keyframes logo_wiggle{
   from {width: 25px;}
   to {width: 420px;}
-  animation-duration: 3s;
+
 
 } 
 
 #logo{
+  animation-duration: 3s;
   animation-name: logo_wiggle;
 }
 
 /* Cards! */
 .pricing{
-    min-height: 500px;
+  min-height: 500px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -86,6 +87,9 @@ Keyframes for animation*/
   border-radius: 7px;
   padding: 0 0 50px 0;
   flex-basis: 400px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .card > header{
@@ -196,10 +200,32 @@ header{
   /* Navbar */
 
   header{
+  	display: flex;
+/*  	list-style: none;*/
+/*  	justify-content: flex-start;
+  	align-items: center;
+  	align-content: center;*/
+/*  	flex-direction: column;*/
+    flex-wrap: wrap;
+  	justify-content: space-between;
+  	align-items: center;
     
   }
 
+  #logo{
+  	display: flex;
+  	justify-content: flex-start;
+  	align-items: flex-start;
+  }
+
   .nav_links{
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  	align-items: center;
+  	/*align-content: space-around;*/
+  	/*align-content: flex-end;*/
+  	
     
   }
 
